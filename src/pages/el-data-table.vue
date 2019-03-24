@@ -40,13 +40,12 @@ Vue.component('el-form-renderer', ElFormRenderer)
 Vue.component('el-data-table', ElDataTable)
 Vue.prototype.$confirm = MessageBox.confirm
 Vue.prototype.$message = Message
-//Vue.prototype.$axios = axios
 export default {
   layout: 'blank',
   data() {
     return {
       tableConfig: {
-        url: 'http://localhost:8080',
+        url: 'http://localhost:8080', // cd server/src -->  node index  启动后端接口
         columns: [
           {
             type: 'selection',
